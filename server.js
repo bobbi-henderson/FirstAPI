@@ -5,7 +5,7 @@ const cors = require('cors')
 const PORT = 8000
 
 let db,
-  dbConnectionStr = 'mongodb+srv://yoda:StarW@rs@cluster0.cvovs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+  dbConnectionStr = 'mongodb+srv://<username>:<password>@cluster0.cvovs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
   dbName = 'book'
 
 MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
