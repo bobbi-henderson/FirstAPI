@@ -10,7 +10,7 @@ deleteBook.addEventListener('click', removeBook)
 
 async function getRandomBook(){
     try {
-        const res = await fetch('http://localhost:8000/api/books')
+        const res = await fetch('/api/books')
         const data = await res.json()
         console.log(data)
 
